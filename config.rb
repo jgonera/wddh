@@ -12,8 +12,8 @@
 ###
 
 # Per-page layout changes:
-page "showcase/*", layout: :showcase_layout
-page "documentation/*", layout: :documentation_layout
+page "contents/showcase/*", layout: :showcase_layout
+page "contents/documentation/*", layout: :documentation_layout
 
 # Proxy pages (http://middlemanapp.com/basics/dynamic-pages/)
 # proxy "/this-page-has-no-template.html", "/template-file.html", :locals => {
@@ -50,7 +50,7 @@ set :markdown, fenced_code_blocks: true, tables: true
 activate :syntax
 
 activate :blog do |blog|
-  blog.sources = "{category}/{title}.html"
+  blog.sources = "contents/{category}/{title}.html"
   blog.permalink = "{category}/{title}.html"
 end
 
