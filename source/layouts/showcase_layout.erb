@@ -1,0 +1,18 @@
+<% wrap_layout :layout do %>
+  <p><%= current_page.data.year %></p>
+  <h1><%= current_page.data.title %></h1>
+  <p><%= current_page.data.description %></p>
+
+  <%= yield %>
+
+  <h2>Data sources</h2>
+  <ul>
+    <% current_page.data.data_sources.each do |data_source| %>
+    <li>
+      <a href="/documentation/<%= data_source %>.html">
+        <%= data.data_sources[data_source] %>
+      </a>
+    </li>
+    <% end %>
+  </ul>
+<% end %>

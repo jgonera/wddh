@@ -22,5 +22,8 @@ gem "redcarpet"
 # Code syntax highlighting
 gem "middleman-syntax"
 
+# "Blog" features (categories, tags)
+gem "middleman-blog"
+
 # Publishing to GitHub pages
 gem 'middleman-gh-pages'
