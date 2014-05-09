@@ -1,0 +1,9 @@
+data_source:
+- IRC feeds
+- MediaWiki API
+- Pageview dumps
+- SQL database
+- RCStream
+- Wikistats
+- Wikidata API
+- XML dumps
