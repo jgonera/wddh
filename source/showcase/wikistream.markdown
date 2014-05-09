@@ -1,8 +1,9 @@
 ---
+category: showcase
 title: Wikistream
 year: 2012
 date: 2014/05/09
-url: http://wikistream.wmflabs.org/
+project_url: http://wikistream.wmflabs.org/
 images:
   - one
 description: >
@@ -23,7 +24,7 @@ data_types:
   - user_contributions
   - article_revisions
 data_sources:
-  - rcstream
+  - RCStream
 ---
 
 A table:
