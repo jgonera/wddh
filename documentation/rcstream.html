@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>RCStream</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="/css/main.css">
+  </head>
+  <body>
+    <nav id="header">
+      <div class="wrap">
+        <h1><a href="/">Wikimedia Data &amp; Developer Hub</a></h1>
+        <ul>
+          <li><a class="showcase" href="/showcase.html">Showcase</a></li>
+          <li><a class="documentation" href="/documentation.html">Documentation</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="wrap content">
+        <p>Lorem ipsum.</p>
+<pre class="highlight javascript"><span class="kd">var</span> <span class="nx">socket</span> <span class="o">=</span> <span class="nx">io</span><span class="p">.</span><span class="nx">connect</span><span class="p">(</span> <span class="s1">'/rc'</span> <span class="p">);</span>
+
+<span class="kd">function</span> <span class="nx">log</span><span class="p">(</span> <span class="nx">text</span> <span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span> <span class="k">typeof</span> <span class="nx">text</span> <span class="o">!==</span> <span class="s1">'string'</span> <span class="p">)</span> <span class="p">{</span>
+    <span class="nx">text</span> <span class="o">=</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span> <span class="nx">text</span><span class="p">,</span> <span class="kc">null</span><span class="p">,</span> <span class="mi">2</span> <span class="p">);</span>
+  <span class="p">}</span>
+  <span class="nx">pre</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span> <span class="s1">'pre'</span> <span class="p">);</span>
+  <span class="nx">pre</span><span class="p">.</span><span class="nx">innerText</span> <span class="o">=</span> <span class="nx">text</span><span class="p">;</span>
+  <span class="nb">document</span><span class="p">.</span><span class="nx">body</span><span class="p">.</span><span class="nx">insertBefore</span><span class="p">(</span> <span class="nx">pre</span><span class="p">,</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span> <span class="s1">'script'</span> <span class="p">)</span> <span class="p">);</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span> <span class="nx">text</span> <span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nx">socket</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span> <span class="s1">'connect'</span><span class="p">,</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+  <span class="nx">log</span><span class="p">(</span> <span class="s1">'connected!'</span> <span class="p">);</span>
+  <span class="nx">socket</span><span class="p">.</span><span class="nx">emit</span><span class="p">(</span> <span class="s1">'subscribe'</span><span class="p">,</span> <span class="p">[</span> <span class="s1">'enwiki'</span><span class="p">,</span> <span class="s1">'bgwiki'</span> <span class="p">]</span> <span class="p">);</span>
+<span class="p">}</span> <span class="p">);</span>
+
+<span class="nx">socket</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span> <span class="s1">'change'</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span> <span class="nx">data</span> <span class="p">)</span> <span class="p">{</span>
+  <span class="nx">log</span><span class="p">(</span> <span class="nx">data</span> <span class="p">);</span>
+<span class="p">}</span> <span class="p">);</span>
+</pre>
+
+  docs
+
+    </section>
+    <script src="js/main.js"></script>
+  </body>
+</html>
