@@ -11,9 +11,7 @@
   <ul>
     <% current_page.data.data_sources.each do |data_source| %>
     <li>
-      <a href="<%= blog.articles.select {|a| a.data[:title] == data_source }.first.url %>">
-        <%= data_source %>
-      </a>
+      <%= link_to data_source, blog.articles.select {|a| a.data[:title] == data_source }.first %>
     </li>
     <% end %>
   </ul>

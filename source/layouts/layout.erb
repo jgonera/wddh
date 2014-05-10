@@ -5,15 +5,15 @@
     <title><%= current_page.data.title || "Wikimedia Data &amp; Developer Hub" %></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="/css/main.css">
+    <%= stylesheet_link_tag "main" %>
   </head>
   <body>
     <nav id="header">
       <div class="wrap">
         <h1><a href="/">Wikimedia Data &amp; Developer Hub</a></h1>
         <ul>
-          <li><a class="showcase" href="/showcase.html">Showcase</a></li>
-          <li><a class="documentation" href="/documentation.html">Documentation</a></li>
+          <li><%= link_to "Showcase", "/showcase.html", class: "showcase" %></li>
+          <li><%= link_to "Documentation", "/documentation.html", class: "documentation" %></li>
         </ul>
       </div>
     </nav>
@@ -21,6 +21,6 @@
     <section class="wrap content">
       <%= yield %>
     </section>
-    <script src="js/main.js"></script>
+    <%= javascript_include_tag "main" %>
   </body>
 </html>
