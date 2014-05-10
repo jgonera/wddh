@@ -19,20 +19,12 @@ page "contents/documentation/*", layout: :documentation_layout
 # proxy "/this-page-has-no-template.html", "/template-file.html", :locals => {
 #  :which_fake_page => "Rendering a fake page with a local variable" }
 
-set :css_dir, 'wddh/css'
-set :js_dir, 'wddh/js'
-set :images_dir, 'wddh/img'
-
 # Automatic image dimensions on image_tag helper
 # activate :automatic_image_sizes
 
 # Reload the browser automatically whenever files change
 configure :development do
   activate :livereload
-
-  set :css_dir, 'css'
-  set :js_dir, 'js'
-  set :images_dir, 'img'
 end
 
 # Methods defined in the helpers block are available in templates
@@ -42,7 +34,13 @@ end
 #   end
 # end
 
+set :css_dir, 'css'
+set :js_dir, 'js'
+set :images_dir, 'img'
+
+# Make it work even if deployed not under root path
 set :relative_links, true
+activate :relative_assets
 
 set :markdown_engine, :redcarpet
 set :markdown, fenced_code_blocks: true, tables: true
