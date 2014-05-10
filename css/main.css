@@ -1,391 +1,96 @@
-/* http://meyerweb.com/eric/tools/css/reset/
-v2.0 | 20110126
-License: none (public domain)
- */
-/* line 19, /home/jgonera/projects/wddh/source/css/reset.css */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline; }
-
-/* HTML5 display-role reset for older browsers */
-/* line 29, /home/jgonera/projects/wddh/source/css/reset.css */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block; }
-
-/* line 32, /home/jgonera/projects/wddh/source/css/reset.css */
-body {
-  line-height: 1; }
-
-/* line 35, /home/jgonera/projects/wddh/source/css/reset.css */
-ol, ul {
-  list-style: none; }
-
-/* line 38, /home/jgonera/projects/wddh/source/css/reset.css */
-blockquote, q {
-  quotes: none; }
-
-/* line 42, /home/jgonera/projects/wddh/source/css/reset.css */
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none; }
-
-/* line 46, /home/jgonera/projects/wddh/source/css/reset.css */
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
-/* line 1, /home/jgonera/projects/wddh/source/css/syntax.css.erb */
-.highlight table td {
-  padding: 5px; }
-
-/* line 2, /home/jgonera/projects/wddh/source/css/syntax.css.erb */
-.highlight table pre {
-  margin: 0; }
-
-/* line 3, /home/jgonera/projects/wddh/source/css/syntax.css.erb */
-.highlight .cm {
-  color: #999988;
-  font-style: italic; }
-
-/* line 7, /home/jgonera/projects/wddh/source/css/syntax.css.erb */
-.highlight .cp {
-  color: #999999;
-  font-weight: bold; }
-
-/* line 11, /home/jgonera/projects/wddh/source/css/syntax.css.erb */
-.highlight .c1 {
-  color: #999988;
-  font-style: italic; }
-
-/* line 15, /home/jgonera/projects/wddh/source/css/syntax.css.erb */
-.highlight .cs {
-  color: #999999;
-  font-weight: bold;
-  font-style: italic; }
-
-/* line 20, /home/jgonera/projects/wddh/source/css/syntax.css.erb */
-.highlight .c, .highlight .cd {
-  color: #999988;
-  font-style: italic; }
-
-/* line 24, /home/jgonera/projects/wddh/source/css/syntax.css.erb */
-.highlight .err {
-  color: #a61717;
-  background-color: #e3d2d2; }
-
-/* line 28, /home/jgonera/projects/wddh/source/css/syntax.css.erb */
-.highlight .gd {
-  color: #000000;
-  background-color: #ffdddd; }
-
-/* line 32, /home/jgonera/projects/wddh/source/css/syntax.css.erb */
-.highlight .ge {
-  color: #000000;
-  font-style: italic; }
-
-/* line 36, /home/jgonera/projects/wddh/source/css/syntax.css.erb */
-.highlight .gr {
-  color: #aa0000; }
-
-/* line 39, /home/jgonera/projects/wddh/source/css/syntax.css.erb */
-.highlight .gh {
-  color: #999999; }
-
-/* line 42, /home/jgonera/projects/wddh/source/css/syntax.css.erb */
-.highlight .gi {
-  color: #000000;
-  background-color: #ddffdd; }
-
-/* line 46, /home/jgonera/projects/wddh/source/css/syntax.css.erb */
-.highlight .go {
-  color: #888888; }
-
-/* line 49, /home/jgonera/projects/wddh/source/css/syntax.css.erb */
-.highlight .gp {
-  color: #555555; }
-
-/* line 52, /home/jgonera/projects/wddh/source/css/syntax.css.erb */
-.highlight .gs {
-  font-weight: bold; }
-
-/* line 55, /home/jgonera/projects/wddh/source/css/syntax.css.erb */
-.highlight .gu {
-  color: #aaaaaa; }
-
-/* line 58, /home/jgonera/projects/wddh/source/css/syntax.css.erb */
-.highlight .gt {
-  color: #aa0000; }
-
-/* line 61, /home/jgonera/projects/wddh/source/css/syntax.css.erb */
-.highlight .kc {
-  color: #000000;
-  font-weight: bold; }
-
-/* line 65, /home/jgonera/projects/wddh/source/css/syntax.css.erb */
-.highlight .kd {
-  color: #000000;
-  font-weight: bold; }
-
-/* line 69, /home/jgonera/projects/wddh/source/css/syntax.css.erb */
-.highlight .kn {
-  color: #000000;
-  font-weight: bold; }
-
-/* line 73, /home/jgonera/projects/wddh/source/css/syntax.css.erb */
-.highlight .kp {
-  color: #000000;
-  font-weight: bold; }
-
-/* line 77, /home/jgonera/projects/wddh/source/css/syntax.css.erb */
-.highlight .kr {
-  color: #000000;
-  font-weight: bold; }
-
-/* line 81, /home/jgonera/projects/wddh/source/css/syntax.css.erb */
-.highlight .kt {
-  color: #445588;
-  font-weight: bold; }
-
-/* line 85, /home/jgonera/projects/wddh/source/css/syntax.css.erb */
-.highlight .k, .highlight .kv {
-  color: #000000;
-  font-weight: bold; }
-
-/* line 89, /home/jgonera/projects/wddh/source/css/syntax.css.erb */
-.highlight .mf {
-  color: #009999; }
-
-/* line 92, /home/jgonera/projects/wddh/source/css/syntax.css.erb */
-.highlight .mh {
-  color: #009999; }
-
-/* line 95, /home/jgonera/projects/wddh/source/css/syntax.css.erb */
-.highlight .il {
-  color: #009999; }
-
-/* line 98, /home/jgonera/projects/wddh/source/css/syntax.css.erb */
-.highlight .mi {
-  color: #009999; }
-
-/* line 101, /home/jgonera/projects/wddh/source/css/syntax.css.erb */
-.highlight .mo {
-  color: #009999; }
-
-/* line 104, /home/jgonera/projects/wddh/source/css/syntax.css.erb */
-.highlight .m, .highlight .mb, .highlight .mx {
-  color: #009999; }
-
-/* line 107, /home/jgonera/projects/wddh/source/css/syntax.css.erb */
-.highlight .sb {
-  color: #d14; }
-
-/* line 110, /home/jgonera/projects/wddh/source/css/syntax.css.erb */
-.highlight .sc {
-  color: #d14; }
-
-/* line 113, /home/jgonera/projects/wddh/source/css/syntax.css.erb */
-.highlight .sd {
-  color: #d14; }
-
-/* line 116, /home/jgonera/projects/wddh/source/css/syntax.css.erb */
-.highlight .s2 {
-  color: #d14; }
-
-/* line 119, /home/jgonera/projects/wddh/source/css/syntax.css.erb */
-.highlight .se {
-  color: #d14; }
-
-/* line 122, /home/jgonera/projects/wddh/source/css/syntax.css.erb */
-.highlight .sh {
-  color: #d14; }
-
-/* line 125, /home/jgonera/projects/wddh/source/css/syntax.css.erb */
-.highlight .si {
-  color: #d14; }
-
-/* line 128, /home/jgonera/projects/wddh/source/css/syntax.css.erb */
-.highlight .sx {
-  color: #d14; }
-
-/* line 131, /home/jgonera/projects/wddh/source/css/syntax.css.erb */
-.highlight .sr {
-  color: #009926; }
-
-/* line 134, /home/jgonera/projects/wddh/source/css/syntax.css.erb */
-.highlight .s1 {
-  color: #d14; }
-
-/* line 137, /home/jgonera/projects/wddh/source/css/syntax.css.erb */
-.highlight .ss {
-  color: #990073; }
-
-/* line 140, /home/jgonera/projects/wddh/source/css/syntax.css.erb */
-.highlight .s {
-  color: #d14; }
-
-/* line 143, /home/jgonera/projects/wddh/source/css/syntax.css.erb */
-.highlight .na {
-  color: #008080; }
-
-/* line 146, /home/jgonera/projects/wddh/source/css/syntax.css.erb */
-.highlight .bp {
-  color: #999999; }
-
-/* line 149, /home/jgonera/projects/wddh/source/css/syntax.css.erb */
-.highlight .nb {
-  color: #0086B3; }
-
-/* line 152, /home/jgonera/projects/wddh/source/css/syntax.css.erb */
-.highlight .nc {
-  color: #445588;
-  font-weight: bold; }
-
-/* line 156, /home/jgonera/projects/wddh/source/css/syntax.css.erb */
-.highlight .no {
-  color: #008080; }
-
-/* line 159, /home/jgonera/projects/wddh/source/css/syntax.css.erb */
-.highlight .nd {
-  color: #3c5d5d;
-  font-weight: bold; }
-
-/* line 163, /home/jgonera/projects/wddh/source/css/syntax.css.erb */
-.highlight .ni {
-  color: #800080; }
-
-/* line 166, /home/jgonera/projects/wddh/source/css/syntax.css.erb */
-.highlight .ne {
-  color: #990000;
-  font-weight: bold; }
-
-/* line 170, /home/jgonera/projects/wddh/source/css/syntax.css.erb */
-.highlight .nf {
-  color: #990000;
-  font-weight: bold; }
-
-/* line 174, /home/jgonera/projects/wddh/source/css/syntax.css.erb */
-.highlight .nl {
-  color: #990000;
-  font-weight: bold; }
-
-/* line 178, /home/jgonera/projects/wddh/source/css/syntax.css.erb */
-.highlight .nn {
-  color: #555555; }
-
-/* line 181, /home/jgonera/projects/wddh/source/css/syntax.css.erb */
-.highlight .nt {
-  color: #000080; }
-
-/* line 184, /home/jgonera/projects/wddh/source/css/syntax.css.erb */
-.highlight .vc {
-  color: #008080; }
-
-/* line 187, /home/jgonera/projects/wddh/source/css/syntax.css.erb */
-.highlight .vg {
-  color: #008080; }
-
-/* line 190, /home/jgonera/projects/wddh/source/css/syntax.css.erb */
-.highlight .vi {
-  color: #008080; }
-
-/* line 193, /home/jgonera/projects/wddh/source/css/syntax.css.erb */
-.highlight .nv {
-  color: #008080; }
-
-/* line 196, /home/jgonera/projects/wddh/source/css/syntax.css.erb */
-.highlight .ow {
-  color: #000000;
-  font-weight: bold; }
-
-/* line 200, /home/jgonera/projects/wddh/source/css/syntax.css.erb */
-.highlight .o {
-  color: #000000;
-  font-weight: bold; }
-
-/* line 204, /home/jgonera/projects/wddh/source/css/syntax.css.erb */
-.highlight .w {
-  color: #bbbbbb; }
-
-/* line 207, /home/jgonera/projects/wddh/source/css/syntax.css.erb */
-.highlight {
-  background-color: #f8f8f8; }
-
-/* line 4, /home/jgonera/projects/wddh/source/css/main.css.scss */
-body {
-  font-family: Helvetica, sans-serif;
-  background: #fff;
-  color: #000; }
-
-/* line 10, /home/jgonera/projects/wddh/source/css/main.css.scss */
-a {
-  color: #30377b;
-  text-decoration: none; }
-
-/* line 15, /home/jgonera/projects/wddh/source/css/main.css.scss */
-.wrap {
-  margin: 0 auto;
-  width: 960px; }
-
-/* line 20, /home/jgonera/projects/wddh/source/css/main.css.scss */
-#header {
-  background: #f4f5f8;
-  margin-bottom: 2em; }
-  /* line 24, /home/jgonera/projects/wddh/source/css/main.css.scss */
-  #header h1, #header ul, #header li, #header li a {
-    display: inline-block; }
-  /* line 28, /home/jgonera/projects/wddh/source/css/main.css.scss */
-  #header h1, #header li a {
-    line-height: 70px; }
-  /* line 32, /home/jgonera/projects/wddh/source/css/main.css.scss */
-  #header h1 a {
-    color: #000; }
-  /* line 36, /home/jgonera/projects/wddh/source/css/main.css.scss */
-  #header li {
-    margin-left: 5px; }
-    /* line 39, /home/jgonera/projects/wddh/source/css/main.css.scss */
-    #header li a {
-      width: 120px; }
-      /* line 42, /home/jgonera/projects/wddh/source/css/main.css.scss */
-      #header li a.showcase:hover {
-        box-shadow: inset 0 -5px #68d69c; }
-      /* line 46, /home/jgonera/projects/wddh/source/css/main.css.scss */
-      #header li a.documentation:hover {
-        box-shadow: inset 0 -5px #2e5779; }
-  /* line 52, /home/jgonera/projects/wddh/source/css/main.css.scss */
-  #header h1 {
-    font-size: 20px;
-    padding-left: 30px;
-    background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNy4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgMzMgMzQuNCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMzMgMzQuNCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8Zz4NCgk8ZGVmcz4NCgkJPHBvbHlnb24gaWQ9IlNWR0lEXzFfIiBwb2ludHM9IjE3LjgsMTUuMiAxNy44LDI2LjkgMTUuMiwyNi45IDE1LjIsMTUuMiAwLDAgMCwzNC40IDMzLDM0LjQgMzMsMCAJCSIvPg0KCTwvZGVmcz4NCgk8Y2xpcFBhdGggaWQ9IlNWR0lEXzJfIj4NCgkJPHVzZSB4bGluazpocmVmPSIjU1ZHSURfMV8iICBvdmVyZmxvdz0idmlzaWJsZSIvPg0KCTwvY2xpcFBhdGg+DQoJPGcgY2xpcC1wYXRoPSJ1cmwoI1NWR0lEXzJfKSI+DQoJCTxjaXJjbGUgaWQ9ImdyZWVuX3BhcnRzXzJfIiBjeD0iMTYuNSIgY3k9IjE3LjYiIHI9IjkuMiIvPg0KCQk8Y2lyY2xlIGlkPSJibHVlX2FyY18yXyIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMDAwMDAwIiBzdHJva2Utd2lkdGg9IjQuMzU3MyIgY3g9IjE2LjUiIGN5PSIxNy42IiByPSIxMy4yIi8+DQoJPC9nPg0KPC9nPg0KPGNpcmNsZSBpZD0icmVkX2NpcmNsZV8yXyIgY3g9IjE2LjUiIGN5PSI3LjEiIHI9IjUuMSIvPg0KPC9zdmc+DQo=') 0 50% no-repeat;
-    background-size: 24px auto; }
-  /* line 59, /home/jgonera/projects/wddh/source/css/main.css.scss */
-  #header ul {
-    float: right; }
-
-/* line 64, /home/jgonera/projects/wddh/source/css/main.css.scss */
-.content {
-  line-height: 1.5; }
-  /* line 67, /home/jgonera/projects/wddh/source/css/main.css.scss */
-  .content p {
-    margin: 1em 0; }
-  /* line 71, /home/jgonera/projects/wddh/source/css/main.css.scss */
-  .content pre {
-    font-family: monospace;
-    padding: 1em; }
+/*
+Syntax error: File to import not found or unreadable: reset.
+              Load paths:
+                /home/jgonera/projects/wddh/source/wddh/css
+                /home/jgonera/.rvm/gems/ruby-2.1.1@wddh/gems/compass-0.12.6/frameworks/blueprint/stylesheets
+                /home/jgonera/.rvm/gems/ruby-2.1.1@wddh/gems/compass-0.12.6/frameworks/compass/stylesheets
+                Compass::SpriteImporter
+        on line 1 of /home/jgonera/projects/wddh/source/css/main.css.scss
+
+1: @import 'reset';
+2: @import 'syntax';
+3: 
+4: body {
+5:   font-family: Helvetica, sans-serif;
+6:   background: #fff;
+
+Backtrace:
+/home/jgonera/projects/wddh/source/css/main.css.scss:1
+/home/jgonera/.rvm/gems/ruby-2.1.1@wddh/gems/sass-3.2.19/lib/sass/tree/import_node.rb:67:in `rescue in import'
+/home/jgonera/.rvm/gems/ruby-2.1.1@wddh/gems/sass-3.2.19/lib/sass/tree/import_node.rb:45:in `import'
+/home/jgonera/.rvm/gems/ruby-2.1.1@wddh/gems/sass-3.2.19/lib/sass/tree/import_node.rb:28:in `imported_file'
+/home/jgonera/.rvm/gems/ruby-2.1.1@wddh/gems/sass-3.2.19/lib/sass/tree/import_node.rb:37:in `css_import?'
+/home/jgonera/.rvm/gems/ruby-2.1.1@wddh/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:217:in `visit_import'
+/home/jgonera/.rvm/gems/ruby-2.1.1@wddh/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
+/home/jgonera/.rvm/gems/ruby-2.1.1@wddh/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/home/jgonera/.rvm/gems/ruby-2.1.1@wddh/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/home/jgonera/.rvm/gems/ruby-2.1.1@wddh/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `map'
+/home/jgonera/.rvm/gems/ruby-2.1.1@wddh/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/home/jgonera/.rvm/gems/ruby-2.1.1@wddh/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/home/jgonera/.rvm/gems/ruby-2.1.1@wddh/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+/home/jgonera/.rvm/gems/ruby-2.1.1@wddh/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+/home/jgonera/.rvm/gems/ruby-2.1.1@wddh/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/home/jgonera/.rvm/gems/ruby-2.1.1@wddh/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
+/home/jgonera/.rvm/gems/ruby-2.1.1@wddh/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
+/home/jgonera/.rvm/gems/ruby-2.1.1@wddh/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/home/jgonera/.rvm/gems/ruby-2.1.1@wddh/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:7:in `visit'
+/home/jgonera/.rvm/gems/ruby-2.1.1@wddh/gems/sass-3.2.19/lib/sass/tree/root_node.rb:20:in `render'
+/home/jgonera/.rvm/gems/ruby-2.1.1@wddh/gems/sass-3.2.19/lib/sass/engine.rb:315:in `_render'
+/home/jgonera/.rvm/gems/ruby-2.1.1@wddh/gems/sass-3.2.19/lib/sass/engine.rb:262:in `render'
+/home/jgonera/.rvm/gems/ruby-2.1.1@wddh/gems/compass-import-once-1.0.4/lib/compass/import-once/engine.rb:17:in `block in render'
+/home/jgonera/.rvm/gems/ruby-2.1.1@wddh/gems/compass-import-once-1.0.4/lib/compass/import-once/engine.rb:29:in `with_import_scope'
+/home/jgonera/.rvm/gems/ruby-2.1.1@wddh/gems/compass-import-once-1.0.4/lib/compass/import-once/engine.rb:16:in `render'
+/home/jgonera/.rvm/gems/ruby-2.1.1@wddh/gems/middleman-core-3.3.2/lib/middleman-core/renderers/sass.rb:65:in `evaluate'
+/home/jgonera/.rvm/gems/ruby-2.1.1@wddh/gems/tilt-1.4.1/lib/tilt/template.rb:103:in `render'
+/home/jgonera/.rvm/gems/ruby-2.1.1@wddh/gems/middleman-core-3.3.2/lib/middleman-core/core_extensions/rendering.rb:267:in `render_individual_file'
+/home/jgonera/.rvm/gems/ruby-2.1.1@wddh/gems/middleman-core-3.3.2/lib/middleman-core/core_extensions/rendering.rb:157:in `render_template'
+/home/jgonera/.rvm/gems/ruby-2.1.1@wddh/gems/middleman-core-3.3.2/lib/middleman-core/sitemap/resource.rb:143:in `block in render'
+/home/jgonera/.rvm/gems/ruby-2.1.1@wddh/gems/activesupport-4.0.5/lib/active_support/notifications.rb:161:in `instrument'
+/home/jgonera/.rvm/gems/ruby-2.1.1@wddh/gems/middleman-core-3.3.2/lib/middleman-core/util.rb:42:in `instrument'
+/home/jgonera/.rvm/gems/ruby-2.1.1@wddh/gems/middleman-core-3.3.2/lib/middleman-core/application.rb:218:in `instrument'
+/home/jgonera/.rvm/gems/ruby-2.1.1@wddh/gems/middleman-core-3.3.2/lib/middleman-core/sitemap/resource.rb:16:in `instrument'
+/home/jgonera/.rvm/gems/ruby-2.1.1@wddh/gems/middleman-core-3.3.2/lib/middleman-core/sitemap/resource.rb:114:in `render'
+/home/jgonera/.rvm/gems/ruby-2.1.1@wddh/gems/middleman-core-3.3.2/lib/middleman-core/core_extensions/request.rb:256:in `process_request'
+/home/jgonera/.rvm/gems/ruby-2.1.1@wddh/gems/middleman-core-3.3.2/lib/middleman-core/core_extensions/request.rb:206:in `block in call!'
+/home/jgonera/.rvm/gems/ruby-2.1.1@wddh/gems/middleman-core-3.3.2/lib/middleman-core/core_extensions/request.rb:205:in `catch'
+/home/jgonera/.rvm/gems/ruby-2.1.1@wddh/gems/middleman-core-3.3.2/lib/middleman-core/core_extensions/request.rb:205:in `call!'
+/home/jgonera/.rvm/gems/ruby-2.1.1@wddh/gems/middleman-core-3.3.2/lib/middleman-core/core_extensions/request.rb:191:in `call'
+/home/jgonera/.rvm/gems/ruby-2.1.1@wddh/gems/rack-1.5.2/lib/rack/builder.rb:138:in `call'
+/home/jgonera/.rvm/gems/ruby-2.1.1@wddh/gems/rack-1.5.2/lib/rack/urlmap.rb:65:in `block in call'
+/home/jgonera/.rvm/gems/ruby-2.1.1@wddh/gems/rack-1.5.2/lib/rack/urlmap.rb:50:in `each'
+/home/jgonera/.rvm/gems/ruby-2.1.1@wddh/gems/rack-1.5.2/lib/rack/urlmap.rb:50:in `call'
+/home/jgonera/.rvm/gems/ruby-2.1.1@wddh/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+/home/jgonera/.rvm/gems/ruby-2.1.1@wddh/gems/rack-1.5.2/lib/rack/lint.rb:49:in `_call'
+/home/jgonera/.rvm/gems/ruby-2.1.1@wddh/gems/rack-1.5.2/lib/rack/lint.rb:37:in `call'
+/home/jgonera/.rvm/gems/ruby-2.1.1@wddh/gems/rack-1.5.2/lib/rack/builder.rb:138:in `call'
+/home/jgonera/.rvm/gems/ruby-2.1.1@wddh/gems/rack-test-0.6.2/lib/rack/mock_session.rb:30:in `request'
+/home/jgonera/.rvm/gems/ruby-2.1.1@wddh/gems/rack-test-0.6.2/lib/rack/test.rb:230:in `process_request'
+/home/jgonera/.rvm/gems/ruby-2.1.1@wddh/gems/rack-test-0.6.2/lib/rack/test.rb:57:in `get'
+/home/jgonera/.rvm/gems/ruby-2.1.1@wddh/gems/middleman-core-3.3.2/lib/middleman-core/cli/build.rb:255:in `render_to_file'
+/home/jgonera/.rvm/gems/ruby-2.1.1@wddh/gems/middleman-core-3.3.2/lib/middleman-core/cli/build.rb:221:in `build_resource'
+/home/jgonera/.rvm/gems/ruby-2.1.1@wddh/gems/middleman-core-3.3.2/lib/middleman-core/cli/build.rb:188:in `each'
+/home/jgonera/.rvm/gems/ruby-2.1.1@wddh/gems/middleman-core-3.3.2/lib/middleman-core/cli/build.rb:188:in `execute!'
+/home/jgonera/.rvm/gems/ruby-2.1.1@wddh/gems/middleman-core-3.3.2/lib/middleman-core/cli/build.rb:128:in `invoke!'
+/home/jgonera/.rvm/gems/ruby-2.1.1@wddh/gems/thor-0.19.1/lib/thor/actions.rb:94:in `action'
+/home/jgonera/.rvm/gems/ruby-2.1.1@wddh/gems/middleman-core-3.3.2/lib/middleman-core/cli/build.rb:70:in `build'
+/home/jgonera/.rvm/gems/ruby-2.1.1@wddh/gems/thor-0.19.1/lib/thor/command.rb:27:in `run'
+/home/jgonera/.rvm/gems/ruby-2.1.1@wddh/gems/thor-0.19.1/lib/thor/invocation.rb:126:in `invoke_command'
+/home/jgonera/.rvm/gems/ruby-2.1.1@wddh/gems/thor-0.19.1/lib/thor.rb:359:in `dispatch'
+/home/jgonera/.rvm/gems/ruby-2.1.1@wddh/gems/thor-0.19.1/lib/thor/base.rb:440:in `start'
+/home/jgonera/.rvm/gems/ruby-2.1.1@wddh/gems/middleman-core-3.3.2/lib/middleman-core/cli.rb:76:in `method_missing'
+/home/jgonera/.rvm/gems/ruby-2.1.1@wddh/gems/thor-0.19.1/lib/thor/command.rb:29:in `run'
+/home/jgonera/.rvm/gems/ruby-2.1.1@wddh/gems/thor-0.19.1/lib/thor/command.rb:126:in `run'
+/home/jgonera/.rvm/gems/ruby-2.1.1@wddh/gems/thor-0.19.1/lib/thor/invocation.rb:126:in `invoke_command'
+/home/jgonera/.rvm/gems/ruby-2.1.1@wddh/gems/thor-0.19.1/lib/thor.rb:359:in `dispatch'
+/home/jgonera/.rvm/gems/ruby-2.1.1@wddh/gems/thor-0.19.1/lib/thor/base.rb:440:in `start'
+/home/jgonera/.rvm/gems/ruby-2.1.1@wddh/gems/middleman-core-3.3.2/lib/middleman-core/cli.rb:22:in `start'
+/home/jgonera/.rvm/gems/ruby-2.1.1@wddh/gems/middleman-core-3.3.2/bin/middleman:18:in `<top (required)>'
+/home/jgonera/.rvm/gems/ruby-2.1.1@wddh/bin/middleman:23:in `load'
+/home/jgonera/.rvm/gems/ruby-2.1.1@wddh/bin/middleman:23:in `<main>'
+/home/jgonera/.rvm/gems/ruby-2.1.1@wddh/bin/ruby_executable_hooks:15:in `eval'
+/home/jgonera/.rvm/gems/ruby-2.1.1@wddh/bin/ruby_executable_hooks:15:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: File to import not found or unreadable: reset.\A               Load paths:\A                 /home/jgonera/projects/wddh/source/wddh/css\A                 /home/jgonera/.rvm/gems/ruby-2.1.1@wddh/gems/compass-0.12.6/frameworks/blueprint/stylesheets\A                 /home/jgonera/.rvm/gems/ruby-2.1.1@wddh/gems/compass-0.12.6/frameworks/compass/stylesheets\A                 Compass::SpriteImporter\A         on line 1 of /home/jgonera/projects/wddh/source/css/main.css.scss\A \A 1: @import 'reset';\A 2: @import 'syntax';\A 3: \A 4: body {\A 5:   font-family: Helvetica, sans-serif;\A 6:   background: #fff;"; }
