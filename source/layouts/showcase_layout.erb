@@ -1,7 +1,9 @@
 <% wrap_layout :layout do %>
-  <p><%= current_page.data.year %></p>
-  <h1><%= current_page.data.title %></h1>
-  <p><%= current_page.data.description %></p>
+  <div class="header-content-wrapper">
+    <p class="header-content"><%= current_page.data.year %></p>
+    <h1 class="title"><%= current_page.data.title %></h1>
+    <p class="header-content"><%= current_page.data.description %></p>
+  </div>
 
   <%= yield %>
 

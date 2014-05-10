@@ -19,7 +19,6 @@ a {
 
 #header {
   background: #f4f5f8;
-  margin-bottom: 2em;
 
   h1, ul, li, li a {
     display: inline-block;
@@ -51,7 +50,7 @@ a {
 
   h1 {
     font-size: 20px;
-    padding-left: 30px;
+    padding-left: 33px;
     background: inline-image('wmf-logo.svg') 0 50% no-repeat;
     background-size: 24px auto;
   }
@@ -65,11 +64,25 @@ a {
   line-height: 1.5;
 
   p {
-    margin: 1em 0;
+    margin: .5em 0;
   }
 
   pre {
     font-family: monospace;
     padding: 1em;
+  }
+
+  .title {
+    font-size: 42px;
+  }
+  .header-content {
+    margin: 0;
+    width: 600px;
+    margin-top: 20px;
+  }
+
+  .header-content-wrapper {
+    background: inline-image('/projects/image1.png');
+    height: 290px;
   }
 }
