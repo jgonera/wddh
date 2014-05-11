@@ -379,58 +379,73 @@ a {
   #header ul {
     float: right; }
 
-/* line 66, /home/jgonera/projects/wddh/source/css/main.css.scss */
+/* line 67, /home/jgonera/projects/wddh/source/css/main.css.scss */
+ul.showcase h2 {
+  background: #f4f5f8;
+  position: relative;
+  width: 30%;
+  height: 100px; }
+/* line 74, /home/jgonera/projects/wddh/source/css/main.css.scss */
+ul.showcase a {
+  display: block;
+  position: absolute;
+  bottom: 0; }
+
+/* line 82, /home/jgonera/projects/wddh/source/css/main.css.scss */
+ul.documentation li {
+  width: 30%; }
+
+/* line 87, /home/jgonera/projects/wddh/source/css/main.css.scss */
 .content {
   line-height: 1.5;
   margin-bottom: 50px; }
-  /* line 70, /home/jgonera/projects/wddh/source/css/main.css.scss */
+  /* line 91, /home/jgonera/projects/wddh/source/css/main.css.scss */
   .content h2 {
-    font-size: 24px;
-    margin-bottom: .5em; }
-  /* line 75, /home/jgonera/projects/wddh/source/css/main.css.scss */
-  .content p {
+    font-size: 24px; }
+  /* line 95, /home/jgonera/projects/wddh/source/css/main.css.scss */
+  .content p, .content h2 {
     margin: .5em 0; }
-  /* line 79, /home/jgonera/projects/wddh/source/css/main.css.scss */
+  /* line 99, /home/jgonera/projects/wddh/source/css/main.css.scss */
   .content th {
     font-weight: bold; }
-  /* line 83, /home/jgonera/projects/wddh/source/css/main.css.scss */
+  /* line 103, /home/jgonera/projects/wddh/source/css/main.css.scss */
   .content th, .content td {
     padding: 4px 8px;
     border: 1px solid #ccc; }
-  /* line 88, /home/jgonera/projects/wddh/source/css/main.css.scss */
+  /* line 108, /home/jgonera/projects/wddh/source/css/main.css.scss */
   .content pre {
     font-family: monospace;
     padding: 1em; }
-  /* line 93, /home/jgonera/projects/wddh/source/css/main.css.scss */
+  /* line 113, /home/jgonera/projects/wddh/source/css/main.css.scss */
   .content a:hover {
     text-decoration: underline; }
-  /* line 97, /home/jgonera/projects/wddh/source/css/main.css.scss */
+  /* line 117, /home/jgonera/projects/wddh/source/css/main.css.scss */
   .content header {
     position: relative;
     min-height: 240px;
     border-bottom: 1px #ccc solid;
     margin-bottom: 2em; }
-    /* line 103, /home/jgonera/projects/wddh/source/css/main.css.scss */
+    /* line 123, /home/jgonera/projects/wddh/source/css/main.css.scss */
     .content header h1 {
       font-size: 42px;
       margin-left: -.05em; }
-    /* line 108, /home/jgonera/projects/wddh/source/css/main.css.scss */
+    /* line 128, /home/jgonera/projects/wddh/source/css/main.css.scss */
     .content header p {
       margin: 0;
-      width: 50%; }
-    /* line 113, /home/jgonera/projects/wddh/source/css/main.css.scss */
+      width: 60%; }
+    /* line 133, /home/jgonera/projects/wddh/source/css/main.css.scss */
     .content header img {
       position: absolute;
       right: 0;
       bottom: 0;
       z-index: -1; }
-  /* line 121, /home/jgonera/projects/wddh/source/css/main.css.scss */
+  /* line 141, /home/jgonera/projects/wddh/source/css/main.css.scss */
   .content aside {
-    margin-top: -2em;
+    margin: -2em 2em 2em;
     width: 200px;
     padding: 2em 20px 15px;
     float: right;
     background: #f4f5f8; }
-    /* line 122, /home/jgonera/projects/wddh/source/css/main.css.scss */
+    /* line 148, /home/jgonera/projects/wddh/source/css/main.css.scss */
     .content aside h2 {
       font-size: 18px; }
