@@ -63,18 +63,37 @@ a {
   }
 }
 
+ul.showcase {
+  h2 {
+    background: $color-light-grey;
+    position: relative;
+    width: 30%;
+    height: 100px;
+  }
+
+  a {
+    display: block;
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+ul.documentation {
+  li {
+    width: 30%;
+  }
+}
+
 .content {
   line-height: 1.5;
   margin-bottom: 50px;
 
   h2 {
     font-size: 24px;
-    margin-bottom: .5em;
   }
 
-  p {
+  p, h2 {
     margin: .5em 0;
-    width: 60%;
   }
 
   th {
@@ -120,14 +139,14 @@ a {
   }
 
   aside {
-    h2 {
-      font-size: 18px;
-    }
-
-    margin-top: -2em;
+    margin: -2em 2em 2em;
     width: 200px;
     padding: 2em 20px 15px;
     float: right;
     background: $color-light-grey;
+
+    h2 {
+      font-size: 18px;
+    }
   }
 }

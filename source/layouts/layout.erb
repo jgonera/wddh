@@ -18,9 +18,11 @@
       </div>
     </nav>
 
-    <section class="wrap content">
-      <%= yield %>
-    </section>
+    <div class="wrap">
+      <section class="content">
+        <%= yield %>
+      </section>
+    </div>
     <%= javascript_include_tag "main" %>
   </body>
 </html>
