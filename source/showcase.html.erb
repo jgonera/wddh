@@ -1,6 +1,6 @@
 <h2>Showcase</h2>
 <ul>
 <% blog.articles.select {|a| a.data[:category] == 'showcase' }.each do |article| %>
-  <li><a href="<%= article.url %>"><%= article.title %></a></li>
+  <li><%= link_to article.title, article %></li>
 <% end %>
 </ul>
