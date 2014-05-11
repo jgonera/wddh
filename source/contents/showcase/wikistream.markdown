@@ -4,8 +4,7 @@ title: Wikistream
 year: 2012
 date: 2014/05/09
 project_url: http://wikistream.wmflabs.org/
-images:
-  - one
+image: image1.png
 description: >
   Wikistream is a Node.js webapp for helping visualize current
   editing activity in Wikipedia. It uses Node.js, socket.io and Redis to sit
@@ -26,6 +25,8 @@ data_types:
 data_sources:
   - RCStream
 ---
+
+## This project is awesome
 
 A table:
 

@@ -1,18 +1,21 @@
 <% wrap_layout :layout do %>
-  <div class="header-content-wrapper">
-    <p class="header-content"><%= current_page.data.year %></p>
-    <h1 class="title"><%= current_page.data.title %></h1>
-    <p class="header-content"><%= current_page.data.description %></p>
-  </div>
+  <header>
+    <p><%= current_page.data.year %></p>
+    <h1><%= current_page.data.title %></h1>
+    <p><%= current_page.data.description %></p>
+    <%= image_tag File.join('showcase', current_page.slug, current_page.data.image) %>
+  </header>
+
+  <aside>
+    <h2>Data sources</h2>
+    <ul>
+      <% current_page.data.data_sources.each do |data_source| %>
+        <li>
+          <%= link_to data_source, blog.articles.select {|a| a.data[:title] == data_source }.first %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
 
   <%= yield %>
-
-  <h2>Data sources</h2>
-  <ul>
-    <% current_page.data.data_sources.each do |data_source| %>
-    <li>
-      <%= link_to data_source, blog.articles.select {|a| a.data[:title] == data_source }.first %>
-    </li>
-    <% end %>
-  </ul>
 <% end %>

@@ -1,4 +1,9 @@
 <% wrap_layout :layout do %>
+  <header>
+    <p>API Documentation</p>
+    <h1><%= current_page.data.title %></h1>
+    <p><%= current_page.data.description %></p>
+  </header>
+
   <%= yield %>
-  docs
 <% end %>
